@@ -6,7 +6,7 @@
     <script>
         var chk=0;
         function showMenu(){
-            var l = document.getElementById('tail').getElementsByTagName('li');
+            var l = document.getElementById('tail1').getElementsByTagName('li');
             if(chk==0){
                 for(i=0;i<l.length;i++){
                     l[i].style.display = "block";
@@ -32,10 +32,12 @@
 			<li><a href="./self-website/index.html">个人网站</a></li>
 			<li><a onclick="showMenu()">YGO服务器网站</a></li>
 			<li><a href="https://jiziqian.github.io/bjsdfz18ban">班级网站</a></li>
+			<li><a href="./others/gpts/index.html">ChatGPT 镜像</a></li>
 		</ul>
 	</nav>
 
-    <ul id="tail">
-        <li><a href="./servers/417/index.html">417</a></li>
+    <ul id="tail1">
+        <li><a href="./servers/417/index.html">417服</a></li>
+        <li><a href="./servers/xiaoye/index.html">宵服</a></li>
     </ul>
 </body>

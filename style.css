@@ -18,7 +18,7 @@ nav ul {
 
 nav li {
     float: left;
-    width: 33.33%;
+    width: 25%;
 }
 
 nav li a {
@@ -33,14 +33,15 @@ nav li a:hover {
     background-color: #ffee00;
 }
 
-#tail {
+#tail1 {
     display: flex;
 }
 
-#tail li {
+#tail1 li {
     display: none;
     float: left;
     width: 100pt;
+    margin: 5pt;
     list-style-type: none;
     background-color: #ffee00;
 }
