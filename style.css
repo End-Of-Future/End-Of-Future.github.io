@@ -1,0 +1,46 @@
+/*Wroten by ChatGPT*/
+body {
+    font-family: 'Javanese Text';
+    text-align: center;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8b21a;
+}
+
+nav li {
+    float: left;
+    width: 33.33%;
+}
+
+nav li a {
+    display: block;
+    color: rgb(83, 64, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ffee00;
+}
+
+#tail {
+    display: flex;
+}
+
+#tail li {
+    display: none;
+    float: left;
+    width: 100pt;
+    list-style-type: none;
+    background-color: #ffee00;
+}
