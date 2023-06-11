@@ -1,10 +1,99 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>I_NOT_FOUND</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .top {      
+            display: flex;
+            width: 100%;
+            height: 50pt;
+            background: rgb(197, 197, 197);
+        }
+
+        .top .tit {     
+            height: 50pt;
+            width: 65%;
+            margin: 0;
+            vertical-align: middle;
+        }
+
+        .top .tit a {
+            margin: 0;
+            position: absolute;
+            top: 9pt;
+            font-family: 'Javanese Text';
+            font-size: xx-large;
+            text-decoration: none;
+            color: #000;
+        }
+        #topm {
+            margin: 10pt;
+            text-align: center;
+            display: flex;
+            width: 953pt;
+            height: 50pt;
+            background-color: aqua;
+        }
+        #topm a{
+            display: block;
+            width: 50pt;
+            height: 40pt;
+            text-align: center;
+            margin: 5pt;
+            background-color: rgb(0, 255, 170);
+            color: #000;
+            text-decoration: none;
+        }
+        .contents {
+            display: flex;
+        }
+        #lmenu{
+            height: 300pt;
+            width: 100pt;
+            background-color: aqua;
+        }
+        #lmenu a{
+            margin: 5pt;
+            display: block;
+            width: 90pt;
+            height: 20pt;
+            background-color: rgb(0, 255, 170);
+            color: #000;
+            text-decoration: none;
+        }
+        #main{
+            margin: 10pt;
+        }
+    </style>
+    <script>
+        function GetTopItems(){
+            const url="http://localhost:2047/login";
+            var req=new XMLHttpRequest();
+            req.open("POST",url,false);
+            req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            req.send("mode=t&code="+Math.random());
+            console.log(req.responseText);
+        }
+    </script>
+    <title>首页——I_NOT_FOUND</title>
 </head>
 <body>
     <div class="top">
-        404_NOT_FOUND
+        <div class="tit"><a href="/">I_NOT_FOUND</a></div>
     </div>
+    <div id="topm">
+    </div>
+    <div class="contents">
+        <div id="lmenu">
+        </div>
+        <div id="main">
+
+        </div>
+    </div>
+    <script>
+        GetTopItems();
+    </script>
 </body>
+</html>
