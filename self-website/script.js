@@ -1,4 +1,4 @@
-const url="http://localhost:2047/login";
+const url="http://localhost:2047/backend";
 function GetTopItems(){
     var req=new XMLHttpRequest();
     req.open("POST",url,false);
